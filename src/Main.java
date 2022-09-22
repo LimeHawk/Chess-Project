@@ -1,5 +1,6 @@
 
-import boardgame.Position;
+import Chess.ChessMatch;
+
 
 
 public class Main {
@@ -7,9 +8,9 @@ public class Main {
     
     public static void main(String[] args) {
         
-        Position pos = new Position(3,5);
+        ChessMatch chessmatch = new ChessMatch();
         
-        System.out.println(pos.toString());
+        UI.printBoard(chessmatch.getPieces());
     }
     
 }
